@@ -16,6 +16,9 @@
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link href="{{ route('categories.show') }}" :active="request()->routeIs('dashboard')">
+                        Categorias
+                    </x-nav-link>
                     @endauth
                 </div>
             </div>
